@@ -1,7 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const morgan = require("morgan");
-const path = require("path");
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -9,7 +8,7 @@ const PORT = process.env.PORT || 8080;
 const routes = require("./routes/api");
 
 // Database
-const mongoDB = process.env.MONGODB_URI || "mongodb+srv://tjdrz:tjdrz@cluster0.77kpk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const mongoDB = process.env.MONGODB_URI;
 
 mongoose.connect(mongoDB, {
   useNewURLParser: true,
