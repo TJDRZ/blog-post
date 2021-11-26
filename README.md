@@ -2,3 +2,4 @@
 
 ## TJDRZ
 
+Deployed on Heroku at https://tjdrz-full-mern.herokuapp.com/
